@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+
+    <!-- countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+        <script src="countdown/simplyCountdown.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex
+    justify-content-center align-items-center text-black">
+        <main>
+            <h1>Waters</h1>
+            <h4>Dear <span><b>Samuel Widagdo,</b></span></h4>
+            <p>We cordially extend to you the invitation to attend the upcoming ASEAN <br>Flexible Packaging Summit 2023
+            </p>
+            <p>Countdown: </p>
+            <div class="simply-countdown"></div>
+            <a href="#invitation" class="btn btn-lg mt-4">View Invitation Letter</a>
+        </main>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        simplyCountdown('.simply-countdown', {
+            year: 2024, // required
+            month: 10, // required
+            day: 24, // required
+            hours: 7, // Default is 0 [0-23] integer
+            minutes:30,
+            seconds:0,
+            words: { //words displayed into the countdown
+                days: { singular: 'day', plural: 'days' },
+                hours: { singular: 'hour', plural: 'hours' },
+                minutes: { singular: 'minute', plural: 'minutes' },
+                seconds: { singular: 'second', plural: 'seconds' }
+            },
+            plural: true, //use plurals
+    });
+    </script>
+</body>
+
+</html>
