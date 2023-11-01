@@ -53,7 +53,7 @@ body{
     background-color: var(--button-background);
     box-shadow: var(--shadow);
 }
-
+/* yang ni utk style tombol tuu */
 .hero a:hover{
     background-color: var(--button);
     color:var(--button-background);
