@@ -9,7 +9,7 @@
 body{
     font-size: 1.2rem; /*semua font defnya 1.2 rem dikali 16px*/
     font-family: 'Roboto', sans-serif;
-    min-height: 2000px; /*biar bisa scroll*/
+    min-height: 4000px; /*biar bisa scroll*/
 }
 
 .hero::before{
@@ -20,6 +20,8 @@ body{
     width: 100%;
     height: 100%;
     /* background-image: url(img/waters.jpg); kebetulan gamau pake gambar jadi bg-color di .heronya gosa diapus */
+    /* background-size: cover; supaya pas dikecilin dia ikut kecil  */
+    /* background-position: center; */
     /* z-index: -1; /*biar ga numpuk,tpi kebetulan gk kepake*/
     /* filter: blur(5px); biar blur, tpi kebetulan gk pake gambar jdi gk bklan ngaruh  */
 }
@@ -28,7 +30,6 @@ body{
     position: relative;
     min-height: 100vh; /*menuhin tinggi dari layar*/
     background-color: var(--blue);
-
 }
 
 .hero h1{
@@ -55,7 +56,7 @@ body{
 
 .hero a:hover{
     background-color: var(--button);
-    color: var(--button-background);
+    color:var(--button-background);
 }
 
 /* ubah font size di tiap media query*/
@@ -66,9 +67,10 @@ body{
     }
     /* untuk ukuran box countdownnya */
     /* .simply-countdown > .simply-section {
-        padding: 70px; */
-    }
+        padding: 70px; 
+    }*/
 }
+
 /* tablet */
 @media (max-width: 768px){
     html{
