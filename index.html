@@ -28,7 +28,7 @@
         <main>
             <h1>Waters</h1>
             <h4>Dear <span><b>Samuel Widagdo,</b></span></h4>
-            <p>We cordially extend to you the invitation to attend the upcoming ASEAN <br>Flexible Packaging Summit 2023
+            <p>We cordially extend to you the invitation to attend the upcoming<br> ASEAN Flexible Packaging Summit 2023
             </p>
             <p>Countdown: </p>
             <div class="simply-countdown"></div>
@@ -39,11 +39,11 @@
 
     <!-- sourcenya di bs v5.3 components-navbar-offcanvas -->
     <!-- sticky-top untuk membuat navbar tetap di atas, navbar-expand-md untuk spya pas kecil baru muncul burgernya -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top"> 
+    <nav class="navbar navbar-expand-md  sticky-top mynavbar"> 
         <!-- supaya ada jarak kiri kanan, pake container -->
         <div class="container"> 
             <a class="navbar-brand" href="#">Waters</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -54,12 +54,12 @@
             <div class="offcanvas-body">
                 <!-- ms= margin start -->
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link "href="#">Home</a>
-                    <a class="nav-link" href="#">Hotel Address</a>
-                    <a class="nav-link" href="#">Notes</a>
-                    <a class="nav-link" href="#">Event Organizer</a>
-                    <a class="nav-link" href="#">Contacts</a>
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link "href="#home">Home</a>
+                    <a class="nav-link" href="#address">Hotel Address</a>
+                    <a class="nav-link" href="#info">Info</a>
+                    <a class="nav-link" href="#organizer">Event Organizer</a>
+                    <a class="nav-link" href="#contacts">Contacts</a>
+                    <a class="nav-link" href="#rsvp">RSVP</a>
                 </div>
             </div>
             </div>
@@ -69,10 +69,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2>Flexible Packaging</h2>
+                    <h4>Lorem Ipsum is simply dummy text</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+            <!-- utk home bagian orang -->
+            <div class="row people">
+                <!-- spya pas di layar yg kecil, dia berubah -->
+                <div class="col-lg-6"> 
+                    <!-- buat 2 kolom lgi, 1 buat gambar, 1 buat penjelasannya -->
+                    <div class="row">
+                        <!-- kolomnya lebih besar 1 kolom dri kolom yang lain, tulisannya ke kanan  -->
+                        <div class="col-8 text-end">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/blank_person.png" alt="person 1" class="img-responsive rounded-circle">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </section>
     <script>
         simplyCountdown('.simply-countdown', {
             year: 2024, // required
-            month: 10, // required
+            month: 10, //  required
             day: 24, // required
             hours: 7, // Default is 0 [0-23] integer
             minutes:30,
@@ -84,6 +115,7 @@
                 seconds: { singular: 'second', plural: 'seconds' }
             },
             plural: true, //use plurals
+            refresh: 1000
     });
     </script>
 </body>

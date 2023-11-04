@@ -12,7 +12,7 @@ body{
     min-height: 4000px; /*biar bisa scroll*/
 }
 
-.hero::before{
+/*.hero::before{
     content: '';
     position: absolute;
     top: 0;
@@ -24,7 +24,8 @@ body{
     /* background-position: center; */
     /* z-index: -1; /*biar ga numpuk,tpi kebetulan gk kepake*/
     /* filter: blur(5px); biar blur, tpi kebetulan gk pake gambar jdi gk bklan ngaruh  */
-}
+
+
 
 .hero{
     position: relative;
@@ -52,12 +53,72 @@ body{
     color: var(--button);
     background-color: var(--button-background);
     box-shadow: var(--shadow);
+    font-size: medium;
 }
 /* yang ni utk style tombol tuu */
 .hero a:hover{
     background-color: var(--button);
     color:var(--button-background);
 }
+
+.mynavbar{
+    background-color: rgba(255,255 , 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.mynavbar .nav-link:hover{
+    color: var(--blue);
+}
+
+.home{
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    filter:grayscale(80%);
+    background-color: rgb(234, 234, 234) ;
+    margin-top: -4.65rem;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+}
+
+.home h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight:500;
+    color: black;
+}
+
+.home h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight:400;
+    color: black;
+}
+
+.home p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight:300;
+    color: rgb(110, 110, 110);
+}
+
+
 
 /* ubah font size di tiap media query*/
 /* laptop */
@@ -76,7 +137,11 @@ body{
     html{
         font-size: 65%; 
     }
-
+    .mynavbar .nav-link{
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        text-align: center;
+    }
 }
 /* hp */
 @media (max-width: 576px){
